@@ -1,0 +1,42 @@
+#! /bin/sh
+#
+# Starts markerless-detector as a background process.
+#
+
+CONFIG=/etc/markerless-detector/config.ini
+LOG_CONFIG=/etc/markerless-detector/logging.ini
+
+start() {
+	markerless_detector -c $CONFIG -l $LOG_CONFIG &
+}
+
+stop() {
+	# Somewhat hackish, but this was only way I could think of :)
+	line=`ps | grep markerless_detector`
+	pid=`echo $line | cut -d ' ' -f 1`
+	kill $pid
+	sleep 1
+	echo "OK"
+}
+
+restart() {
+	stop
+	start
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart|reload)
+		restart
+		;;
+	*)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?
