@@ -46,7 +46,7 @@ endef
 MARKERLESS_DETECTOR_POST_INSTALL_TARGET_HOOKS += MARKERLESS_DETECTOR_INSTALL_EXTRA
 
 define MARKERLESS_DETECTOR_INSTALL_INIT_SYSV
-	$(INSTALL) -D -m 755 package/markerless-detector/S50markerless-detector \
+	$(INSTALL) -D -m 755 package/markerless-detector/S60markerless-detector \
 		$(TARGET_DIR)/etc/init.d
 endef
 
