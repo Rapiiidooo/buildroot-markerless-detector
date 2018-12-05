@@ -1,0 +1,4 @@
+config BR2_PACKAGE_MARKERLESS_DETECTOR
+    bool "MarkerlessDetector"
+    help
+      OPENCV PROJECT MASTER !

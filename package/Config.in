@@ -2091,8 +2091,8 @@ menu "Text editors and viewers"
 	source "package/vim/Config.in"
 endmenu
 
-menu "MarkerlessDetector packages"
-source "package/markerless-detector/Config.in"
+menu "Our package :)"
+source "package/MarkerlessDetector/Config.in"
 endmenu
 
 endmenu

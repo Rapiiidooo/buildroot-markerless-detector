@@ -1,7 +1,0 @@
-config BR2_PACKAGE_MARKERLESS_DETECTOR
-	bool "markerless-detector"
-	select BR2_PACKAGE_PYTHON_IMUTILS
-	help
-	  We didn't provide any help labels ^^
-
-	  https://github.com/Chadys/MarkerlessDetector
