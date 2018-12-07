@@ -67,6 +67,12 @@ To build an SD-card image, just run ``make``:
 
     make
 
+or with the correct JLEVEL as your build machine: 
+
+::
+
+    BR2_JLEVEL=4 make
+
 Buildroot will download and build all packages and create the SD-card image
 in one step.
 
@@ -86,12 +92,6 @@ and run ``make`` again:
 ::
 
     make
-
-or with the correct JLEVEL as your build machine: 
-
-::
-
-    BR2_JLEVEL=4 make
 
 The build will take (~30seconds-1minute depending on the build machine).
 
