@@ -10,8 +10,6 @@ MORPIONPYTHON_SITE = $(call github,Chadys,morpion_python,$(MORPIONPYTHON_VERSION
 
 ifeq ($(BR2_PACKAGE_MORPIONPYTHON), y)
 define MORPIONPYTHON
-	$(INSTALL) -D -m 755 package/morpionpython/S60morpionpython \
-		$(TARGET_DIR)/etc/init.d
 	read -p "Appuyer sur une touche pour continuer ..."
 
 endef

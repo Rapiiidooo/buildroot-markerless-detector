@@ -1,4 +1,4 @@
-Buildroot + python + package + inittab
+Buildroot + custom python package + launch on boot
 =================================
 
 For more information about buildroot, please consult the official buildroot
@@ -80,24 +80,7 @@ The build will take some time (~40-60 minutes depending on the build machine).
 
 The output will be available in *output/images*
 
-Step 6: edit inittab in output/target
-+++++++++++++++++++++
-
-::
-
-	echo "/usr/bin/python3" >> buildroot-2018.02.8/output/target/etc/profile
-
-and run ``make`` again:
-
-::
-
-	make
-
-The build will take (~30seconds-1minute depending on the build machine).
-
-The output will be available in *output/images*
-
-Step 7: write SD-card
+Step 6: write SD-card
 +++++++++++++++++++++
 
 Write the image to the SD-card with *dd*:
