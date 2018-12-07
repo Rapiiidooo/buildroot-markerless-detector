@@ -1,19 +1,15 @@
 #! /bin/sh
 #
-# Starts markerless-detector
+# Starts metro
 #
-TEMPLATES_B=/etc/MarkerlessDetector/atomeMiniBlue.png
-TEMPLATES_G=/etc/MarkerlessDetector/atomeMiniGreen.png
-TEMPLATES_R=/etc/MarkerlessDetector/atomeMiniRed.png
-SIZE=4.23
 
 start() {
-	python /etc/MarkerlessDetector/identifier.py -t $TEMPLATES_B $TEMPLATES_G $TEMPLATES_R -s $SIZE
+	/bin/metro
 }
 
 stop() {
 	# Somewhat hackish, but this was only way I could think of :)
-	line=`ps | grep python`
+	line=`ps | grep metro`
 	pid=`echo $line | cut -d ' ' -f 1`
 	kill $pid
 	sleep 1
