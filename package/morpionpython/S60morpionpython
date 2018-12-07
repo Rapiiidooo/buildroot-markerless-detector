@@ -1,15 +1,14 @@
 #! /bin/sh
 #
-# Starts metro
+# Starts morpion.py
 #
 
 start() {
-	/bin/metro
+	python3 morpion.py
 }
 
 stop() {
-	# Somewhat hackish, but this was only way I could think of :)
-	line=`ps | grep metro`
+	line=`ps | grep python`
 	pid=`echo $line | cut -d ' ' -f 1`
 	kill $pid
 	sleep 1

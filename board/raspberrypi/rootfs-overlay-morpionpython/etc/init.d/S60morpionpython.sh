@@ -1,0 +1,38 @@
+#! /bin/sh
+#
+# Starts morpion.py
+#
+
+start() {
+	/usr/bin/python3 /bin/morpion.py
+}
+
+stop() {
+	line=`ps | grep python`
+	pid=`echo $line | cut -d ' ' -f 1`
+	kill $pid
+	sleep 1
+	echo "OK"
+}
+
+restart() {
+	stop
+	start
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart|reload)
+		restart
+		;;
+	*)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit $?

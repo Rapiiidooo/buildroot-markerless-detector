@@ -1,0 +1,6 @@
+config BR2_PACKAGE_MORPIONPYTHON
+	bool "morpionpython"
+	help
+	  A simple morpion python.
+
+	  https://github.com/Chadys/morpion_python
