@@ -1,7 +1,3 @@
-# Buildroot-package-metro
-
-https://buildroot.org/downloads/buildroot-2018.02.8.tar.gz
-
 Buildroot + cmake package (c projetc name's metro) + inittab
 =================================
 
