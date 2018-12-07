@@ -2091,9 +2091,6 @@ menu "Text editors and viewers"
 	source "package/vim/Config.in"
 endmenu
 
-menu "OCTREE :)"
-	source "package/octree/Config.in"
-endmenu
 menu "METRO :)"
 	source "package/metro/Config.in"
 endmenu

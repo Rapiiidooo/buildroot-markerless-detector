@@ -1,5 +1,5 @@
 config BR2_PACKAGE_METRO
     bool "metro"
     help
-      Octree package says hello world to you
+      metro package says hello world to you
       see https://github.com/Chadys/metro_project for more on this software
