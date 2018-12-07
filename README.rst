@@ -1,4 +1,4 @@
-Buildroot + cmake package (c projetc name's metro) + inittab
+Buildroot + custom package + inittab
 =================================
 
 For more information about buildroot, please consult the official buildroot
@@ -6,7 +6,7 @@ documentation:
 
 https://buildroot.org/downloads/manual/manual.html
 
-For more information about metro:
+For more information about metro project:
 
 https://github.com/Chadys/metro_project
 
